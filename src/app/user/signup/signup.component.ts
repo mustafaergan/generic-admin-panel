@@ -15,7 +15,7 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.save(this.model);
+    this.userService.save(this.model).subscribe(res => console.log('done'));;
   }
 
   ngOnInit() {
